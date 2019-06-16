@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DepositManagementViewController">
+            <connections>
+                <outlet property="NameSearchBar" destination="u20-t6-NFj" id="ffP-tf-fje"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NvI-PS-78v">
+                    <rect key="frame" x="0.0" y="10" width="375" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="押金设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYV-Ko-oqT">
+                            <rect key="frame" x="20" y="0.0" width="100" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="EfT-wv-SQJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="manager_17" translatesAutoresizingMaskIntoConstraints="NO" id="xIF-Ec-qLe">
+                            <rect key="frame" x="335" y="15" width="20" height="20"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="DVH-yU-kpk"/>
+                                <constraint firstAttribute="height" constant="20" id="Iw5-Ea-Qjd"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="nYV-Ko-oqT" firstAttribute="leading" secondItem="NvI-PS-78v" secondAttribute="leading" constant="20" id="7go-FQ-fx9"/>
+                        <constraint firstAttribute="trailing" secondItem="xIF-Ec-qLe" secondAttribute="trailing" constant="20" id="B3y-Bf-Eyb"/>
+                        <constraint firstItem="nYV-Ko-oqT" firstAttribute="top" secondItem="NvI-PS-78v" secondAttribute="top" id="SoO-Tf-xO1"/>
+                        <constraint firstAttribute="bottom" secondItem="nYV-Ko-oqT" secondAttribute="bottom" id="jui-Dh-QI3"/>
+                        <constraint firstAttribute="height" constant="50" id="loc-bW-pJR"/>
+                        <constraint firstItem="xIF-Ec-qLe" firstAttribute="centerY" secondItem="NvI-PS-78v" secondAttribute="centerY" id="ylN-jK-aZv"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="YMU-e3-CIE" appends="YES" id="rID-v6-rdS"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXH-E3-cEQ">
+                    <rect key="frame" x="0.0" y="70" width="375" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="押金列表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNo-yu-oyy">
+                            <rect key="frame" x="20" y="0.0" width="100" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="Xri-lF-hDp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="u20-t6-NFj">
+                            <rect key="frame" x="130" y="0.0" width="225" height="50"/>
+                            <color key="barTintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                                <string>Title</string>
+                            </scopeButtonTitles>
+                        </searchBar>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="12N-hv-Smu"/>
+                        <constraint firstItem="u20-t6-NFj" firstAttribute="top" secondItem="mXH-E3-cEQ" secondAttribute="top" id="8kp-Dx-RWz"/>
+                        <constraint firstItem="u20-t6-NFj" firstAttribute="leading" secondItem="kNo-yu-oyy" secondAttribute="trailing" constant="10" id="bLh-3l-Sjb"/>
+                        <constraint firstAttribute="trailing" secondItem="u20-t6-NFj" secondAttribute="trailing" constant="20" id="c5G-Mc-b9O"/>
+                        <constraint firstAttribute="bottom" secondItem="kNo-yu-oyy" secondAttribute="bottom" id="glh-0b-aSo"/>
+                        <constraint firstAttribute="bottom" secondItem="u20-t6-NFj" secondAttribute="bottom" id="jOO-JW-0Uw"/>
+                        <constraint firstItem="kNo-yu-oyy" firstAttribute="top" secondItem="mXH-E3-cEQ" secondAttribute="top" id="k7B-5S-Wtg"/>
+                        <constraint firstItem="kNo-yu-oyy" firstAttribute="leading" secondItem="mXH-E3-cEQ" secondAttribute="leading" constant="20" id="uoG-VL-XI9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="NvI-PS-78v" secondAttribute="trailing" id="O9q-jr-5sX"/>
+                <constraint firstItem="mXH-E3-cEQ" firstAttribute="top" secondItem="NvI-PS-78v" secondAttribute="bottom" constant="10" id="lcR-2A-OHh"/>
+                <constraint firstItem="mXH-E3-cEQ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="pRH-vk-LDR"/>
+                <constraint firstItem="NvI-PS-78v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="pk3-bB-f7U"/>
+                <constraint firstItem="NvI-PS-78v" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="w8H-bk-h5A"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="mXH-E3-cEQ" secondAttribute="trailing" id="yAN-xG-oYw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+        </view>
+        <tapGestureRecognizer id="YMU-e3-CIE">
+            <connections>
+                <action selector="DepositTapAction:" destination="-1" id="d2R-wn-iPj"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="manager_17" width="46" height="46"/>
+    </resources>
+</document>
